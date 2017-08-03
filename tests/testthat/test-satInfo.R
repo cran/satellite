@@ -2,10 +2,10 @@
 context("satInfo")
 
 test_that("satAddLog works as expected for Landsat 8", {
-  path <- system.file("extdata", 
+  path <- system.file("testdata/LC8", 
                       package = "satellite")
   files <- list.files(path, 
-                      pattern = glob2rx("LC8*.tif"), 
+                      pattern = glob2rx("LC8*.TIF"), 
                       full.names = TRUE)
   sat <- satellite(files)
   
