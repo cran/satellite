@@ -12,7 +12,7 @@
 
 <meta name="author" content="Thomas Nauss" />
 
-<meta name="date" content="2017-08-02" />
+<meta name="date" content="2017-10-18" />
 
 <title>Landsat-8 Calibration</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Landsat-8 Calibration</h1>
 <h4 class="author"><em>Thomas Nauss</em></h4>
-<h4 class="date"><em>2017-08-02</em></h4>
+<h4 class="date"><em>2017-10-18</em></h4>
 
 
 
@@ -88,7 +88,7 @@ sat &lt;-<span class="st"> </span><span class="kw">satellite</span>(files)</code
 </div>
 <div id="converting-landsat-8-scaled-counts-to-physical-units" class="section level2">
 <h2>Converting Landsat-8 scaled counts to physical units</h2>
-<p>In order to convert scaled counts of a satellite object to radiance, reflectance and/or temperature, just supply it to the <code>convSC2Rad</code>, <code>convSC2Ref</code> or <code>convRad2BT</code> function.</p>
+<p>In order to convert scaled counts of a Satellite object to radiance, reflectance and/or temperature, just supply it to the <code>convSC2Rad</code>, <code>convSC2Ref</code> or <code>convRad2BT</code> function.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sat &lt;-<span class="st"> </span><span class="kw">convSC2Rad</span>(sat)
 sat &lt;-<span class="st"> </span><span class="kw">convSC2Ref</span>(sat)
 sat &lt;-<span class="st"> </span><span class="kw">convRad2BT</span>(sat)</code></pre></div>
