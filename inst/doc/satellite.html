@@ -12,7 +12,7 @@
 
 <meta name="author" content="Thomas Nauss, Florian Detsch" />
 
-<meta name="date" content="2021-10-06" />
+<meta name="date" content="2021-10-12" />
 
 <title>satellite - Classes and Methods for Satellite Data</title>
 
@@ -141,7 +141,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <h1 class="title toc-ignore">satellite - Classes and Methods for Satellite Data</h1>
 <h4 class="author">Thomas Nauss, Florian Detsch</h4>
-<h4 class="date">2021-10-06</h4>
+<h4 class="date">2021-10-12</h4>
 
 
 
@@ -264,8 +264,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  $ REFMIN  : num  -0.1 -0.1 -0.1 -0.1 -0.1 ...
 ##  $ LNBR    : int  1 2 3 4 5 6 7 8 9 10 ...
 ##  $ LAYER   : chr  &quot;LC08_L1TP_195025_20130707_20170503_01_T1_B1&quot; &quot;LC08_L1TP_195025_20130707_20170503_01_T1_B2&quot; &quot;LC08_L1TP_195025_20130707_20170503_01_T1_B3&quot; &quot;LC08_L1TP_195025_20130707_20170503_01_T1_B4&quot; ...
-##  $ FILE    : chr  &quot;/tmp/RtmpPlg8yC/Rinst6bd62fb52ed0/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_B1.TIF&quot; &quot;/tmp/RtmpPlg8yC/Rinst6bd62fb52ed0/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_B2.TIF&quot; &quot;/tmp/RtmpPlg8yC/Rinst6bd62fb52ed0/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_B3.TIF&quot; &quot;/tmp/RtmpPlg8yC/Rinst6bd62fb52ed0/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_B4.TIF&quot; ...
-##  $ METAFILE: chr  &quot;/tmp/RtmpPlg8yC/Rinst6bd62fb52ed0/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_MTL.txt&quot; &quot;/tmp/RtmpPlg8yC/Rinst6bd62fb52ed0/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_MTL.txt&quot; &quot;/tmp/RtmpPlg8yC/Rinst6bd62fb52ed0/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_MTL.txt&quot; &quot;/tmp/RtmpPlg8yC/Rinst6bd62fb52ed0/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_MTL.txt&quot; ...
+##  $ FILE    : chr  &quot;/tmp/RtmpjoV6Jt/Rinst6dca539375c9/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_B1.TIF&quot; &quot;/tmp/RtmpjoV6Jt/Rinst6dca539375c9/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_B2.TIF&quot; &quot;/tmp/RtmpjoV6Jt/Rinst6dca539375c9/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_B3.TIF&quot; &quot;/tmp/RtmpjoV6Jt/Rinst6dca539375c9/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_B4.TIF&quot; ...
+##  $ METAFILE: chr  &quot;/tmp/RtmpjoV6Jt/Rinst6dca539375c9/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_MTL.txt&quot; &quot;/tmp/RtmpjoV6Jt/Rinst6dca539375c9/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_MTL.txt&quot; &quot;/tmp/RtmpjoV6Jt/Rinst6dca539375c9/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_MTL.txt&quot; &quot;/tmp/RtmpjoV6Jt/Rinst6dca539375c9/satellite/extdata/LC08_L1TP_195025_20130707_20170503_01_T1_MTL.txt&quot; ...
 ##  $ RID.y   : chr  &quot;R00001&quot; &quot;R00001&quot; &quot;R00001&quot; &quot;R00001&quot; ...
 ##  $ XRES    : num  30 30 30 30 30 30 30 15 30 30 ...
 ##  $ YRES    : num  30 30 30 30 30 30 30 15 30 30 ...
@@ -286,12 +286,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>sat_tc <span class="ot">&lt;-</span> <span class="fu">calcTopoCorr</span>(sat)</span>
 <span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(sat_tc<span class="sc">@</span>meta[, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>])</span></code></pre></div>
 <pre><code>##                  BCDE SCENE       DATE SID    SENSOR    SGRP
-## 38 B004n_REF_TopoCorr    NA 2021-10-06 LC8 Landsat 8 Landsat
-## 39 B005n_REF_TopoCorr    NA 2021-10-06 LC8 Landsat 8 Landsat
-## 40 B006n_REF_TopoCorr    NA 2021-10-06 LC8 Landsat 8 Landsat
-## 41 B007n_REF_TopoCorr    NA 2021-10-06 LC8 Landsat 8 Landsat
-## 42 B008n_REF_TopoCorr    NA 2021-10-06 LC8 Landsat 8 Landsat
-## 43 B009n_REF_TopoCorr    NA 2021-10-06 LC8 Landsat 8 Landsat</code></pre>
+## 38 B004n_REF_TopoCorr    NA 2021-10-12 LC8 Landsat 8 Landsat
+## 39 B005n_REF_TopoCorr    NA 2021-10-12 LC8 Landsat 8 Landsat
+## 40 B006n_REF_TopoCorr    NA 2021-10-12 LC8 Landsat 8 Landsat
+## 41 B007n_REF_TopoCorr    NA 2021-10-12 LC8 Landsat 8 Landsat
+## 42 B008n_REF_TopoCorr    NA 2021-10-12 LC8 Landsat 8 Landsat
+## 43 B009n_REF_TopoCorr    NA 2021-10-12 LC8 Landsat 8 Landsat</code></pre>
 <p>As you can see, all bands have been topographically corrected and the meta data for the resulting layers is automatically appended to the original data frame. Note for example how <code>$DATE</code> is set to the date that layers were calculated.</p>
 <p>Note, that in order to avoid too long console output, we only show the first and last six columns and rows, respectively, of the meta data here.</p>
 </div>
@@ -301,7 +301,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sat<span class="sc">@</span>log</span></code></pre></div>
 <pre><code>## $ps0001
 ## $ps0001$time
-## [1] &quot;2021-10-06 10:08:03 CEST&quot;
+## [1] &quot;2021-10-12 08:28:24 CEST&quot;
 ## 
 ## $ps0001$info
 ## [1] &quot;Initial import&quot;
@@ -315,7 +315,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## $ps0002
 ## $ps0002$time
-## [1] &quot;2021-10-06 10:08:03 CEST&quot;
+## [1] &quot;2021-10-12 08:28:24 CEST&quot;
 ## 
 ## $ps0002$info
 ## NULL
@@ -329,12 +329,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(sat_tc<span class="sc">@</span>log[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>])</span></code></pre></div>
 <pre><code>## List of 2
 ##  $ ps0001:List of 4
-##   ..$ time  : POSIXct[1:1], format: &quot;2021-10-06 10:08:03&quot;
+##   ..$ time  : POSIXct[1:1], format: &quot;2021-10-12 08:28:24&quot;
 ##   ..$ info  : chr &quot;Initial import&quot;
 ##   ..$ layers: chr &quot;all&quot;
 ##   ..$ output: chr &quot;all&quot;
 ##  $ ps0002:List of 4
-##   ..$ time    : POSIXct[1:1], format: &quot;2021-10-06 10:08:03&quot;
+##   ..$ time    : POSIXct[1:1], format: &quot;2021-10-12 08:28:24&quot;
 ##   ..$ info    : NULL
 ##   ..$ in_bcde : chr &quot;DEM&quot;
 ##   ..$ out_bcde: chr &quot;DEM&quot;</code></pre>
